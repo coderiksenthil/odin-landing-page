@@ -2,6 +2,9 @@
 .body{
     margin: 0;
     padding: 0;
+    height: 0;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
 }
 
 .logo{
@@ -9,6 +12,11 @@
     padding: 60px;
     color: white;
     
+}
+.navbar{
+    margin: 0%;
+    padding: 0%;
+ 
 }
 
 .navlink{
@@ -19,7 +27,6 @@
     text-align: left;
     
 }
-
 .navclass{
     background-color: #1F2937 ;
     display: flexbox;
@@ -65,24 +72,39 @@
     text-align: center;
 }
 
-.flex{
+.mainflex{
   display: flex; 
-
+  /*float: left;*/
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+object-fit: cover;
+ 
 }
 
 .imgflex{
-    width:50%;
-    height:50%;
+    width:200px;
+    height:200px;
+    border: 2px solid #000000;
+    object-fit: cover;
     display:flexbox;
+    align-items: center;
+    justify-content: center;
 }
 
 .main2{
     background-color:#e5e7eb;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .para2{
     font-style: italic;
     padding: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .para3{
@@ -93,22 +115,30 @@
 .box{
     background-color: #3882f6;
     width: 50%;
-    text-align: center;
     padding:0px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 0px;
 }
 /*button*/
 .button{
     text-decoration: none;
     color: white;
-    border: 3px solid white;
-    border-radius: 20px;
+    border: 0.5px solid white;
+    border-radius: 7px;
     word-spacing: 3px;
+    
 }
 /*footer */
 .main3{
     background-color: #1F2937;
     width:auto;
     padding: 1%;
+    color: white;
+    
 }
 
+.main23{
+    text-align: center;
+}
